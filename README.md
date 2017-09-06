@@ -72,3 +72,10 @@ timer.access.delay=60
 # 线程池数目上限
 thread.max.task=10
 ```
+
+# 备注
+
+     1、模仿Mybatis的 pojo-> xml -> mapper -> dao
+     2、利用jFinal的 Db->Record 模式替代pojo对象的定义
+     3、本项目中因功能单一，仅仅为了同步，所以对T_DEV 和 T_DEV_AP这两张关联表并未做mapper映射和接口定义
+     4、同时，3也是此模式的好处之一，对于简单的没有太多业务逻辑的表可以依托关联表定义的Mapper来处理（精髓是取消了pojo和mapper的绑定）
